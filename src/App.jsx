@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Plus, X, ExternalLink, Grip, AlertCircle, Layout, Grid3x3 } from 'lucide-react';
+import { Plus, X, ExternalLink, Grip, AlertCircle, Layout, Grid } from 'lucide-react';
 
 const ALL_LLMS = [
   // Major AI Assistants
@@ -237,7 +237,7 @@ function App() {
           {activeLLMs.length === 0 ? (
             <div className="h-full flex items-center justify-center text-gray-400">
               <div className="text-center">
-                <Grid3x3 className="w-16 h-16 mx-auto mb-4 opacity-50" />
+                <Grid className="w-16 h-16 mx-auto mb-4 opacity-50" />
                 <p className="text-lg font-medium">Drop AI models here</p>
                 <p className="text-sm mt-2">Drag from the sidebar to start comparing</p>
               </div>
